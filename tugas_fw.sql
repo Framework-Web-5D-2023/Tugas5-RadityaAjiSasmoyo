@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2023 at 10:14 AM
+-- Generation Time: Nov 24, 2023 at 07:36 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `fw_5d`
+-- Database: `tugas_fw`
 --
 
 -- --------------------------------------------------------
@@ -35,7 +35,7 @@ CREATE TABLE `mahasiswa` (
   `minat` varchar(255) DEFAULT NULL,
   `domisili` varchar(255) DEFAULT NULL,
   `jenis_kelamin` varchar(1) DEFAULT NULL,
-  `image` varchar(255) DEFAULT NULL,
+  `image` blob DEFAULT NULL,
   `created_at` date NOT NULL,
   `updated_at` date NOT NULL,
   `deleted_at` date DEFAULT NULL
@@ -46,12 +46,11 @@ CREATE TABLE `mahasiswa` (
 --
 
 INSERT INTO `mahasiswa` (`id`, `nama`, `npm`, `prodi`, `minat`, `domisili`, `jenis_kelamin`, `image`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(4, 'Raditya Aji Sasmoyo', '2010631170111', 'Informatika', 'Pemograman Web', 'Karawang', 'L', NULL, '2023-10-25', '2023-10-25', NULL),
 (20, 'Alif Jabar', '201063170112', 'Informatika', 'Web Developer', 'Purwakarta', 'L', NULL, '2023-10-27', '2023-10-27', NULL),
 (21, 'Farhan Assegaf', '2010631170113', 'Informatika', 'Computer Parts', 'Karawang', 'L', NULL, '2023-11-01', '2023-11-01', NULL),
 (22, 'Indra Fauzi Idris', '2010631170110', 'Informatika', 'Game Developer', 'Purwakarta', 'L', NULL, '2023-11-01', '2023-11-01', NULL),
-(23, 'Ringga Akbar', '2010631170109', 'Informatika', 'Game Developer', 'Surakarta', 'L', NULL, '2023-11-01', '2023-11-01', NULL),
-(35, 'Alfian Vit', '21312312111', 'Informatika', 'Web Developer', 'Bogor', 'L', NULL, '2023-11-01', '2023-11-01', NULL);
+(23, 'Ringga Akbar 2', '2010631170109', 'Informatika', 'Game Developer', 'Surakarta', 'L', NULL, '2023-11-01', '2023-11-24', NULL),
+(44, 'Raditya Aji Sasmoyo', '2010631170111', 'Informatika', 'Web Developer', 'Karawang', 'L', 0x313730303830373637365f37313130363262393162313931373362616264392e6a7067, '2023-11-24', '2023-11-24', NULL);
 
 --
 -- Indexes for dumped tables
@@ -72,7 +71,7 @@ ALTER TABLE `mahasiswa`
 -- AUTO_INCREMENT for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

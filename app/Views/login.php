@@ -1,4 +1,4 @@
-<?= $this->extend('template') ?>
+<?= $this->extend('layout/template') ?>
 
 <?= $this->section('content') ?>
 <div class="container m-auto mt-5" style="width:500px;">

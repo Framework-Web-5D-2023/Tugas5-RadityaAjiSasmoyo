@@ -10,7 +10,7 @@
           <a class="nav-link active" aria-current="page" href="<?= base_url("/"); ?>">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?= base_url("/about_us"); ?>">About Us</a>
+          <a class="nav-link active" aria-current="page" href="<?= base_url("/about"); ?>">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?= base_url("/login"); ?>">Login</a>
@@ -19,7 +19,7 @@
           <a class="nav-link" href="<?= base_url("/login/signup"); ?>">Register</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url("/pertemuan5"); ?>">Create</a>
+          <a class="nav-link" href="<?= base_url("/pertemuan5"); ?>">Pertemuan5</a>
         </li>
       </ul>
     </div>

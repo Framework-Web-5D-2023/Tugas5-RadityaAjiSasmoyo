@@ -1,4 +1,4 @@
-<?= $this->extend('template') ?>
+<?= $this->extend('layout/template') ?>
 
 <?= $this->section('content') ?>
 <?php $session = session(); ?>
